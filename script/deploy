@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh chekwube@167.172.100.241 <<EOF
+ cd ~/node-jen
+ git pull
+ npm install — production
+ pm2 restart index
+ exit
+EOF
